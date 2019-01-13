@@ -1,6 +1,5 @@
 <template>
   <div>
-    <transition name="fade">
       <div v-if="isSlideoutOpen">
         <trap-focus :disabled="!isSlideoutOpen">
           <div
@@ -18,7 +17,6 @@
           </div>
         </trap-focus>
       </div>
-    </transition>
   </div>
 </template>
 
