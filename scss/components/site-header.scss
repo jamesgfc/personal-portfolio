@@ -1,0 +1,19 @@
+.c-site-header {
+  border-bottom: 1px solid #eaeaea;
+  background-color: black;
+  color: white;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+  }
+
+  &__logo-container {
+    padding: 1rem;
+  }
+
+  &__menu-button-container {
+    display: flex;
+  }
+}

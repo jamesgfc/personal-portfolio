@@ -1,0 +1,46 @@
+$t-spacing-sizes-blueberry: (xs: 4px, s: 8px, m: 16px, l: 32px);
+$t-spacing-sizes-kiwi: (xs: 6px, s: 12px, m: 24px, l: 48px);
+$t-spacing-sizes-orange: (xs: 8px, s: 16px, m: 32px, l: 64px);
+
+@mixin t-spacing-for-map-with-important($sizes-map, $size, $force-important, $props) {
+  @each $prop in $props {
+    $map-val: map-get($sizes-map, $size);
+    @if not $map-val {
+      $map-val: $size;
+    }
+
+    $important-value: if($force-important, !important, null);
+    #{$prop}: $map-val $important-value;
+  }
+}
+
+@mixin t-spacing-for-map($sizes-map, $size, $props) {
+  @include t-spacing-for-map-with-important($sizes-map, $size, false, $props);
+}
+
+@mixin t-spacing-with-important($size, $force-important, $props) {
+  @include t-spacing-for-map-with-important($t-spacing-sizes-blueberry, $size, $force-important, $props);
+
+  @include t-exact-kiwi {
+    @include t-spacing-for-map-with-important($t-spacing-sizes-kiwi, $size, $force-important, $props);
+  }
+
+  @include t-greater-than-kiwi {
+    @include t-spacing-for-map-with-important($t-spacing-sizes-orange, $size, $force-important, $props);
+  }
+}
+
+@mixin t-spacing($size, $props) {
+  @include t-spacing-with-important($size, false, $props);
+}
+
+$t-spacing-sizes-matrix: (kiwi: $t-spacing-sizes-kiwi, blueberry: $t-spacing-sizes-blueberry, orange: $t-spacing-sizes-orange);
+
+@function t-spacing($size, $sizes-map: blueberry) {
+  $val: map-get(map-get($t-spacing-sizes-matrix, $sizes-map), $size);
+  @if not $val {
+    $val: $size;
+  }
+
+  @return $val;
+}

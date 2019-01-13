@@ -1,0 +1,28 @@
+
+.c-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: map-get($s-heading-sizes, xl);
+    color: $s-grey-dark;
+
+    @each $size, $value in $s-heading-sizes {
+      &--is-#{$size} {
+        font-size: $value;
+      }
+    }
+
+    &--is-bold {
+      font-weight: 600;
+    }
+
+    &--is-margin-bottomless {
+      margin-bottom: 0
+    }
+
+    &--is-white {
+      color: $s-white;
+    }
+
+    &--is-light {
+      color: $s-white;
+    }
+}

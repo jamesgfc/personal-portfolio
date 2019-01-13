@@ -1,0 +1,23 @@
+.c-btn {
+  @extend %naked-button;
+  display: flex;
+  background: $s-color-3;
+  padding: 0.5rem;
+  color: $s-white;
+  align-items: center;
+
+  &__content {
+    color: $s-white;
+    &:hover, &:active {
+      color: $s-light;
+    }
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+  }
+
+  &__icon--is-before {
+    margin: 0 0.5rem 0 0;
+  }
+}

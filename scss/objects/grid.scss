@@ -1,0 +1,56 @@
+
+.o-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: map-get($s-spacing-sizes, l);
+  align-items: center;
+  max-width: 100%;
+
+  @mixin o-grid-modifiers($modifierSuffix: "") {
+
+    &--has-1-cols#{$modifierSuffix} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &--has-2-cols#{$modifierSuffix} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--has-3-cols#{$modifierSuffix} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @include o-grid-modifiers;
+
+  @include t-greater-than-blueberry {
+    @include o-grid-modifiers($modifierSuffix: "\\@gt-blueberry");
+  }
+
+  @include t-from-blueberry-to-kiwi {
+    @include o-grid-modifiers($modifierSuffix: "\\@blueberry-to-kiwi");
+  }
+
+  @include t-greater-than-kiwi {
+    @include o-grid-modifiers($modifierSuffix: "\\@gt-kiwi");
+  }
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--is-flexible {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--left {
+      align-items: flex-start;
+    }
+  }
+
+
+}

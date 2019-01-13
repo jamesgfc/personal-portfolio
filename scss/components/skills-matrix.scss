@@ -1,0 +1,8 @@
+.c-skills-matrix {
+  @include t-spacing(l, (margin-bottom));
+
+  &__image {
+    width: 2rem;
+    margin-bottom: 1rem;
+  }
+}

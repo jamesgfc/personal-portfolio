@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  background-color: snow;
+  color: $s-grey-dark;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 map-get($s-spacing-sizes, xl) 0;
+    color: $s-grey-dark;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: map-get($s-heading-sizes, xxxl);
+}
+
+h2 {
+    font-size: map-get($s-heading-sizes, xxl);
+}
+
+h3 {
+    font-size: map-get($s-heading-sizes, xl);
+}
+
+h4 {
+    font-size: map-get($s-heading-sizes, l);
+}
+
+h5 {
+    font-size: map-get($s-heading-sizes, m);
+}
+
+h6 {
+    font-size: map-get($s-heading-sizes, s);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color:$s-color-3;
+  transition:.5s;
+  text-decoration: none;
+}
+a:hover {
+  color: $s-color-3-darker;
+}
+
+button {
+  cursor: pointer;
+}

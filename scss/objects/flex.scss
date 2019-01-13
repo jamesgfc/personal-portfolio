@@ -1,0 +1,115 @@
+.o-flex {
+  $grid-column-gap: 16px !default;
+  $grid-column-count: 12;
+  $__item: #{&}__item;
+
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+
+  &__row {
+    margin-bottom: 16px;
+    margin-left: -($grid-column-gap / 2);
+    margin-right: -($grid-column-gap / 2);
+    display: flex;
+
+    @mixin o-flex-row-modifiers($modifierSuffix: "") {
+      &--is-h-centered#{$modifierSuffix} {
+        justify-content: center;
+      }
+
+      &--is-h-flex-end#{$modifierSuffix} {
+        justify-content: flex-end;
+      }
+
+      &--is-h-space-between#{$modifierSuffix} {
+        justify-content: space-between;
+      }
+
+      &--is-h-space-around#{$modifierSuffix} {
+        justify-content: space-around;
+      }
+
+      &--is-v-centered#{$modifierSuffix} {
+        align-items: center;
+      }
+
+      &--is-v-flex-end#{$modifierSuffix} {
+        align-items: flex-end;
+      }
+
+      &--is-reversed#{$modifierSuffix} {
+        flex-direction: row-reverse;
+      }
+
+      &--can-wrap#{$modifierSuffix} {
+        flex-wrap: wrap;
+      }
+
+      &--is-gapless#{$modifierSuffix} {
+        margin-left: 0;
+        margin-right: 0;
+
+        @at-root #{& $__item} {
+          margin: 0;
+          padding: 0 !important;
+        }
+      }
+
+      &--is-margin-bottomless#{$modifierSuffix} {
+        margin-bottom: 0;
+      }
+    }
+
+    @include o-flex-row-modifiers;
+
+    @include t-greater-than-blueberry {
+      @include o-flex-row-modifiers($modifierSuffix: "-\\@gt-blueberry");
+    }
+
+    @include t-from-blueberry-to-kiwi {
+      @include o-flex-row-modifiers($modifierSuffix: "-\\@blueberry-to-kiwi");
+    }
+
+    @include t-greater-than-kiwi {
+      @include o-flex-row-modifiers($modifierSuffix: "-\\@gt-kiwi");
+    }
+    }
+
+    &__item {
+      display: block;
+      flex: 1 1 calc(100% / #{$grid-column-count});
+      padding: 0 $grid-column-gap / 2;
+
+      @mixin o-flex-item-modifiers($modifierSuffix: "") {
+        @for $i from 1 through $grid-column-count {
+          &--#{$i}#{$modifierSuffix} {
+            flex: none;
+            width: percentage($i / $grid-column-count);
+          }
+
+          &--offset-#{$i}#{$modifierSuffix} {
+            margin-left: percentage($i / $grid-column-count);
+          }
+        }
+
+        &--is-inflexible#{$modifierSuffix} {
+          flex: none;
+        }
+      }
+
+      @include o-flex-item-modifiers($modifierSuffix: "");
+
+      @include t-greater-than-blueberry {
+        @include o-flex-item-modifiers($modifierSuffix: "\\@gt-blueberry");
+      }
+
+      @include t-from-blueberry-to-kiwi {
+        @include o-flex-item-modifiers($modifierSuffix: "\\@blueberry-to-kiwi");
+      }
+
+      @include t-greater-than-kiwi {
+        @include o-flex-item-modifiers($modifierSuffix: "\\@gt-kiwi");
+      }
+    }
+}

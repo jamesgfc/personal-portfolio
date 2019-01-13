@@ -1,0 +1,61 @@
+// <pluto ('simpler' first)> | <earth> | <jupiter+>
+
+@mixin t-exact-kiwi {
+  @media (min-width: $s-breakpoint-blueberry + 1px) and (max-width: $s-breakpoint-kiwi) {
+    @content;
+  }
+}
+
+@mixin t-greater-than-kiwi {
+  @media (min-width: $s-breakpoint-kiwi + 1px) {
+    @content;
+  }
+}
+
+@mixin t-less-than-blueberry {
+  @media (max-width: $s-breakpoint-blueberry) {
+    @content;
+  }
+}
+
+@mixin t-less-than-kiwi {
+  @media (max-width: $s-breakpoint-kiwi) {
+    @content;
+  }
+}
+
+@mixin t-less-than-orange {
+  @media (max-width: $s-breakpoint-orange) {
+    @content;
+  }
+}
+
+@mixin t-greater-than-blueberry {
+  @media (min-width: $s-breakpoint-blueberry + 1px) {
+    @content;
+  }
+}
+
+@mixin t-greater-than-orange {
+  @media (min-width: $s-breakpoint-orange + 1px) {
+    @content;
+  }
+}
+
+@mixin t-from-blueberry-to-kiwi {
+  @media (min-width: $s-breakpoint-blueberry + 1px) and (max-width: $s-breakpoint-kiwi) {
+    @content;
+  }
+}
+
+@mixin t-from-blueberry-to-orange {
+  @media (min-width: $s-breakpoint-blueberry + 1px) and (max-width: $s-breakpoint-orange) {
+    @content;
+  }
+}
+
+@mixin t-from-kiwi-to-orange {
+  @media (min-width: $s-breakpoint-kiwi + 1px) and (max-width: $s-breakpoint-orange) {
+    @content;
+  }
+}

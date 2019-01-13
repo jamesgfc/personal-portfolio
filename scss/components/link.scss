@@ -1,0 +1,10 @@
+.c-link {
+  color: $s-color-3;
+
+  &--is-on-dark {
+    color: $s-white;
+    &:hover {
+      color: $s-color-3;
+    }
+  }
+}

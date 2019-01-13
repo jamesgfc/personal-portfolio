@@ -1,0 +1,43 @@
+{
+  "name": "JamesWrightPortfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of James Wright",
+  "author": "james@jamesandrewwright.com",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/vue-fontawesome": "^0.1.2",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11",
+    "normalize.css": "^8.0.0",
+    "nuxt": "^1.0.0",
+    "nuxt-class-component": "^1.2.1",
+    "nuxt-property-decorator": "^1.2.0",
+    "vue-date-fns": "^1.0.0",
+    "vue-focus-lock": "^1.3.0",
+    "vue2-animate": "^2.1.0",
+    "vue2-filters": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3"
+  }
+}

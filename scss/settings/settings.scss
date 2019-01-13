@@ -1,0 +1,36 @@
+$s-heading-sizes: (
+  s: 16px,
+  m: 20px,
+  l: 24px,
+  xl: 28px,
+  xxl: 32px,
+  xxxl: 48px
+);
+
+$s-spacing-sizes: (
+  s: 4px,
+  m: 8px,
+  l: 12px,
+  xl: 24px,
+  xxl: 48px,
+  xxxl: 96px
+);
+
+$s-breakpoint-blueberry: 480px;
+$s-breakpoint-kiwi: 720px;
+$s-breakpoint-orange: 940px;
+
+$s-white: #FFF;
+$s-light: #FFF0CE;
+$s-light-darker: darken($s-light, 8%);
+$s-light-lighter: lighten($s-light, 8%);
+$s-grey-light: #eaeaea;
+$s-grey-dark: #383838;
+
+$s-color-1: #097392;
+$s-color-2: #83B4B3;
+$s-color-3: #D55534;
+$s-color-3-darker: darken($s-color-3, 10%);
+$s-color-3-lighter: lighten($s-color-3, 10%);
+
+$-box-vertical-offset: map-get($s-spacing-sizes, xxl);

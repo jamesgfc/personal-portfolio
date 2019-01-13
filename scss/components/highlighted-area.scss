@@ -1,0 +1,29 @@
+.c-highlighted-area {
+  padding: 1rem;
+  background-color: $s-grey-light;
+  color: $s-grey-dark;
+  margin-bottom: 1rem;
+
+  &__title {
+    color: $s-grey-dark;
+    font-size: map-get($s-heading-sizes, xl);
+  }
+
+  &--is-style-1 {
+    background-color: $s-color-1;
+  }
+
+  &--is-style-2 {
+    background-color: $s-color-2;
+  }
+
+  &--is-style-3 {
+    background-color: $s-grey-dark;
+  }
+
+  &--is-style-1,
+  &--is-style-2,
+  &--is-style-3 {
+    color: $s-white;
+  }
+}
