@@ -8,7 +8,7 @@
       </div>
       <button
         class="u-naked-button"
-        @click="toggleSlideout()"
+        @click="toggleOverlay()"
         aria-label="toggle menu">
         Menu <font-awesome-icon icon="bars" />
     </button>
@@ -32,10 +32,10 @@ import Menu from "~/components/menu/Menu.vue";
   }
 })
 export default class SiteHeader extends Vue {
-  @Prop({ type: Boolean, default: false }) isSlideoutOpen;
+  @Prop({ type: Boolean, default: false }) isOverlayOpen;
 
-  toggleSlideout(newVal) {
-    this.$emit("menu-clicked", !this.isSlideoutOpen);
+  toggleOverlay(newVal) {
+    this.$emit("menu-clicked", !this.isOverlayOpen);
   }
 }
 </script>

@@ -1,17 +1,16 @@
 <template>
   <div>
     <no-ssr>
-      <Slideout
-        :is-slideout-open="slideoutOpen"
-        @slideout-toggled="onSlideoutToggle">
+      <Overlay
+        :is-overlay-open="overlayOpen"
+        @overlay-toggled="onOverlayToggle">
         <Menu></Menu>
-      </Slideout>
+      </Overlay>
     </no-ssr>
 
     <main class="c-app">
-      <Site-Header :is-slideout-open="slideoutOpen" @menu-clicked="onSlideoutToggle" />
+      <Site-Header :is-overlay-open="overlayOpen" @menu-clicked="onOverlayToggle" />
       <nuxt/>
-
     </main>
   </div>
 </template>
@@ -21,7 +20,7 @@ import { Component, Vue } from "nuxt-property-decorator";
 import {State, Mutation, namespace} from "vuex-class";
 
 import SiteHeader from "~/components/siteHeader/SiteHeader.vue";
-import Slideout from "~/components/slideout/Slideout.vue";
+import Overlay from "~/components/overlay/Overlay.vue";
 import Menu from "~/components/menu/Menu.vue";
 
 const APP_MODULE = namespace("app");
@@ -29,14 +28,14 @@ const APP_MODULE = namespace("app");
 @Component({
   components: {
     SiteHeader,
-    Slideout,
+    Overlay,
     Menu,
   }
 })
 export default class Default extends Vue {
-  slideoutOpen = false;
-  onSlideoutToggle(isOpen) {
-    this.slideoutOpen = isOpen;
+  overlayOpen = false;
+  onOverlayToggle(isOpen) {
+    this.overlayOpen = isOpen;
   }
 }
 </script>

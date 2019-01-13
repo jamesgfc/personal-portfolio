@@ -1,14 +1,14 @@
 export const state = () => ({
-  slideoutOpen: false,
-  slideoutAnimating: false,
+  overlayOpen: false,
+  overlayAnimating: false,
 })
 
 export const mutations = {
-  setSlideoutOpen(state, val) {
-    state.slideoutOpen = val;
+  setOverlayOpen(state, val) {
+    state.overlayOpen = val;
   },
 
-  setSlideoutAnimating(state, val) {
-    state.slideoutAnimating = val;
+  setOverlayAnimating(state, val) {
+    state.overlayAnimating = val;
   }
 }
