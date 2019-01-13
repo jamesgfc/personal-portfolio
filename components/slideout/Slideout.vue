@@ -31,7 +31,7 @@ import Btn from "~/components/btn/Btn.vue";
 export default class Slideout extends Vue {
   @Prop({ type: Boolean, default: false }) isSlideoutOpen;
   @Prop({ type: Boolean, default: false }) disableEsc;
-  @Prop({ type: Boolean, default: true }) disableDocumentClick;
+  @Prop({ type: Boolean, default: false }) disableDocumentClick;
 
   toggleSlideout(newVal) {
     this.$emit("slideout-toggled", newVal);
