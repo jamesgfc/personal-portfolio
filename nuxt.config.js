@@ -6,7 +6,7 @@ module.exports = {
     title: "James Wright | User interface specialist | Web developer",
     meta: [
       { charset: "utf-8" },
-      { name: google-site-verification, content: "SBl_E-vQ_5KWDKuqYJRQYSXjXx_oeDFiOsY5v9W8i5I" },
+      { name: "google-site-verification", content: "SBl_E-vQ_5KWDKuqYJRQYSXjXx_oeDFiOsY5v9W8i5I" },
       { "http-equiv": "cleartype", content: "on" },
       { "http-equiv": "X-UA-Compatible", content: "IE=edge,chrome=1" },
       { name: "author", content: "James Wright" },
