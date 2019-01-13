@@ -1,9 +1,7 @@
 <template functional>
   <footer class="c-site-footer">
-    <div class="c-site-footer__copyright">Copyright James Wright 2018</div>
-    <div class="c-site-footer__contact"></div>
     <ul class="c-site-footer__links">
-      <li class="c-site-footer__item">
+      <li class="c-site-footer__link-item">
         <a class="c-site-footer__link" href="mailto:james@jamesandrewwright.com">james@jamesandrewwright.com</a>
       </li>
       <li class="c-site-footer__link-item">
@@ -17,5 +15,7 @@
         </a>
       </li>
     </ul>
+    <div class="c-site-footer__copyright">Copyright James Wright 2018</div>
   </footer>
+
 </template>

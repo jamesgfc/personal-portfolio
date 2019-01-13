@@ -1,26 +1,28 @@
 .c-site-footer {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
+  text-align: center;
+  margin: map-get($s-spacing-sizes, xl) 0;
+  padding: map-get($s-spacing-sizes, xl) 0;
+  border-top: 1px solid $s-color-1;
 
   &__links {
-    display: flex;
-    flex: 1;
     list-style-type: none;
-    justify-self: flex-end;
-    justify-content: flex-end;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+    @include t-greater-than-blueberry {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
   }
 
   &__link-item {
-    padding: 0 1rem;
-  }
-
-  &__link {
-    color: $s-color-3;
+    margin-bottom: map-get($s-spacing-sizes, xl);
+    @include t-greater-than-blueberry {
+      margin-right: map-get($s-spacing-sizes, xl);
+    }
   }
 
   &__link-image {
-    width: 2rem;
+    width: 40px;
   }
 }
