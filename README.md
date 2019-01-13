@@ -1,6 +1,6 @@
-# nuxt-playground
+# James Wright personal portfolio
 
-> Nuxt.js project
+> Server side rendered Vue.js project powered by Nuxt.js and deployed on netlify.
 
 ## Build Setup
 
@@ -18,5 +18,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
