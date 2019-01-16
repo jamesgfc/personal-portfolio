@@ -1,0 +1,13 @@
+.c-alert-box {
+
+  padding: map-get($s-spacing-sizes, s );
+  border-radius: $s-component-border-radius;
+  margin-bottom: map-get($s-spacing-sizes, m );
+  background-color: $s-grey-light;
+  color: $s-grey-dark;
+
+  &--is-warn {
+    background-color: $s-alert-color-warn;
+    color: $s-grey-dark;
+  }
+}

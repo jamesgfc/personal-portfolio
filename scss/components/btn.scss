@@ -2,22 +2,19 @@
   @extend %naked-button;
   display: flex;
   background: $s-color-3;
-  padding: 0.5rem;
+  padding: map-get($s-spacing-sizes, m);
   color: $s-white;
   align-items: center;
 
   &__content {
     color: $s-white;
-    &:hover, &:active {
-      color: $s-light;
-    }
   }
 
   &__icon {
-    margin-left: 0.5rem;
+    margin-left: map-get($s-spacing-sizes, m);
   }
 
   &__icon--is-before {
-    margin: 0 0.5rem 0 0;
+    margin: 0 map-get($s-spacing-sizes, m) 0 0;
   }
 }

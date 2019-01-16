@@ -2,7 +2,9 @@
   <footer class="c-site-footer">
     <ul class="c-site-footer__links">
       <li class="c-site-footer__link-item">
-        <a class="c-site-footer__link" href="mailto:james@jamesandrewwright.com">james@jamesandrewwright.com</a>
+        <nuxt-link to="/contact">
+        <img class="c-site-footer__link-image" src="~/assets/gmail.svg" alt="Email">
+        </nuxt-link>
       </li>
       <li class="c-site-footer__link-item">
         <a href="https://github.com/jamesgfc" class="c-site-footer__link">

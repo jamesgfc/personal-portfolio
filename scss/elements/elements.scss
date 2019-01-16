@@ -61,5 +61,19 @@ a:hover {
 }
 
 button {
-  cursor: pointer;
+  &[disabled]{
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  margin-bottom: map-get($s-spacing-sizes, m );
+  width: 100%;
+  display: block;
+
 }

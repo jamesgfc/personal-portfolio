@@ -1,0 +1,17 @@
+.o-form-layout {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 200px 1fr;
+
+  &__label-container {
+    grid-column: 1 / 2;
+  }
+
+  &__element-container {
+    grid-column: 2 / 3;
+
+    &--has-content-justified-right {
+      justify-self: right;
+    }
+  }
+}

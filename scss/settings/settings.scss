@@ -30,7 +30,13 @@ $s-grey-dark: #383838;
 $s-color-1: #097392;
 $s-color-2: #83B4B3;
 $s-color-3: #D55534;
+
+$s-alert-color-warn: #ffdd57;
+
+
 $s-color-3-darker: darken($s-color-3, 10%);
 $s-color-3-lighter: lighten($s-color-3, 10%);
 
-$-box-vertical-offset: map-get($s-spacing-sizes, xxl);
+$s-box-vertical-offset: map-get($s-spacing-sizes, xxl);
+
+$s-component-border-radius: 4px;
