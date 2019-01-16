@@ -23,12 +23,10 @@ import { Component, Prop } from "nuxt-property-decorator";
 import { State, namespace } from "vuex-class";
 
 import Btn from "~/components/btn/Btn.vue";
-import Menu from "~/components/menu/Menu.vue";
 
 @Component({
   components: {
     Btn,
-    Menu
   }
 })
 export default class SiteHeader extends Vue {

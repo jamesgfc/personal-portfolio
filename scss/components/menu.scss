@@ -1,0 +1,29 @@
+.c-menu {
+  margin: 0;
+  padding: 0;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: map-get($s-spacing-sizes, l);
+  }
+
+  &__link {
+    font-size: map-get($s-heading-sizes, xl);
+    padding-left: map-get($s-spacing-sizes, l);
+    flex: 1;
+    &--is-active {
+      font-weight: bold;
+      border-left: 4px solid $s-color-1;
+    }
+  }
+
+  &__item-icon {
+    font-size: map-get($s-heading-sizes, l );
+    flex-grow: 0;
+  }
+
+
+
+
+}

@@ -4,12 +4,12 @@
       <Overlay
         :is-overlay-open="overlayOpen"
         @overlay-toggled="onOverlayToggle">
-        <Menu></Menu>
+        <menu-list @menu-item-selected="onMenuItemSelected"></menu-list>
       </Overlay>
     </no-ssr>
 
     <main class="c-app">
-      <Site-Header :is-overlay-open="overlayOpen" @menu-clicked="onOverlayToggle" />
+      <site-header :is-overlay-open="overlayOpen" @menu-clicked="onOverlayToggle" />
       <nuxt/>
     </main>
   </div>
@@ -20,22 +20,25 @@ import { Component, Vue } from "nuxt-property-decorator";
 import {State, Mutation, namespace} from "vuex-class";
 
 import SiteHeader from "~/components/siteHeader/SiteHeader.vue";
-import Overlay from "~/components/overlay/Overlay.vue";
-import Menu from "~/components/menu/Menu.vue";
-
-const APP_MODULE = namespace("app");
+import Overlay from "~/components/overlay/overlay.vue";
+import MenuList from "~/components/menu/menuList.vue";
 
 @Component({
   components: {
     SiteHeader,
     Overlay,
-    Menu,
+    MenuList,
   }
 })
 export default class Default extends Vue {
   overlayOpen = false;
+
   onOverlayToggle(isOpen) {
     this.overlayOpen = isOpen;
+  }
+
+  onMenuItemSelected() {
+    this.overlayOpen = false;
   }
 }
 </script>

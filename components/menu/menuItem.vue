@@ -1,16 +1,28 @@
-<template functional>
-  <div class="c-menu-item">
+<template>
+  <li class="c-menu__item">
     <nuxt-link
-      :to="props.route"
-      class="c-link c-link--is-on-dark c-menu-item__link"
-      active-class="c-menu__link--is-active"
-      exact>
-      {{ props.label }}
+      v-bind="$attrs"
+      @click.native="onClickMenuItem()"
+      class="c-link c-link--is-on-dark c-menu__link"
+      active-class="c-menu__link--is-active">
+      {{ label }}
     </nuxt-link>
-    <nuxt-link :to="props.route" exact>
-    <i class="c-link c-link--is-on-dark c-menu-item__link c-menu-item__icon">
-      <font-awesome-icon :icon="props.icon" aria-hidden="true" />
+    <i class="c-link c-link--is-on-dark c-menu__link c-menu__item-icon">
+      <font-awesome-icon :icon="icon" aria-hidden="true" />
     </i>
-    </nuxt-link>
-  </div>
+  </li>
 </template>
+
+<script>
+import { Component, Prop, Vue } from "nuxt-property-decorator";
+
+@Component( {})
+export default class MenuItem extends Vue {
+  @Prop({ type: String }) label;
+  @Prop({ type: String }) icon;
+
+  onClickMenuItem() {
+    this.$emit("menu-item-selected", false);
+  }
+}
+</script>
