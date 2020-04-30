@@ -5,6 +5,10 @@
     </page-intro>
     <div class="c-site-content">
       <div class="c-page">
+        <section class="c-page__notification">
+          <p>Currently available to consider new permanent and contract opportunities.</p> 
+          <Btn @on-button-clicked="navigateToContact" label="Contact me today" />
+        </section>
         <div class="c-page__inner">
           <client-matrix title="Featured clients and employers" :partners="featuredPartners"></client-matrix>
           <h1 class="c-title c-title--is-xl">Featured technical skills</h1>
@@ -25,6 +29,7 @@ import PageIntro from "~/components/pageIntro/pageIntro.vue";
 import ClientMatrix from "~/components/clientMatrix/ClientMatrix.vue";
 import SkillsMatrix from "~/components/skillsMatrix/SkillsMatrix.vue";
 import SiteFooter from "~/components/siteFooter/siteFooter.vue";
+import Btn from "~/components/btn/Btn.vue";
 
 let StintsStore = namespace("stints");
 let PartnersStore = namespace("partners");
@@ -36,6 +41,7 @@ let SkillsStore = namespace("skills");
     ClientMatrix,
     SiteFooter,
     SkillsMatrix,
+    Btn
   }
 })
 export default class Index extends Vue {
@@ -57,6 +63,10 @@ export default class Index extends Vue {
 
   open() {
     console.log("opened");
+  }
+
+  navigateToContact() {
+    this.$router.push("contact");
   }
 }
 </script>
