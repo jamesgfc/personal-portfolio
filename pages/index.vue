@@ -1,7 +1,7 @@
 <template>
   <div>
     <page-intro title-light="Hi, I'm" title-strong="James...">
-      I'm an experienced web development specialist based in Kent and London, with experience across the whole project lifecycle. Coupling extensive experience in traditional front end development roles with leading agile development teams / mentoring / line managing, I can thrive in challenging environments and love working in an iterable and collaborative manner.  Currently working for Capita Employee Benefits on the Orbit benefits SaaS platform, I am a user interface expert who understands the merits of 'done' and ‘perfect’!
+      I'm an experienced web development specialist based in Kent and London, with experience across the whole project lifecycle. Coupling extensive experience in traditional front end development roles with leading agile development teams / mentoring / line managing, I can thrive in challenging environments and love working in an iterable and collaborative manner.  Currently working for popular Fintech P2P platform Kuflink, I am a user interface expert who understands the merits of 'done' and ‘perfect’!
     </page-intro>
     <div class="c-site-content">
       <div class="c-page">

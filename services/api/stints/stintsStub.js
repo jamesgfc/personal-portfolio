@@ -1,5 +1,44 @@
 export default [
   {
+    "id": "10",
+    "client": "Kuflink",
+    "clientLogo": "kuflink.svg",
+    "role": "Front end engineer",
+    "description": "Leading front end development with Kuflink’s award-winning online Peer to Peer (P2P) investment platform",
+    "highlights": [
+        "Migrating legacy and cumbersome admin applications to newever, scalable platforms (Vue.js) to achieve time savings, allowing internal admin to gain new insights into our investor base",
+        "Circa 10x improvement in bundle size of investment platform",
+        "Promoting and implementing front end unit tests using Mocha and Cyprus",
+        "Total rebuild of the investment platform",
+        "Working and mentoring offshore development teams and promoting best practice some as component driven design and unit testing, and putting processes such as pull requests and peer reviews in place",
+        "Creating P2P appropriateness test to check to ensure that investors understand the implications of their investment.",
+        "Zero investor losses to date (at the time of writing)"
+    ],
+    "startDate": "2019-06-17T00:00:00.000Z",
+    "tags": [
+      "Angular 2+",
+      "VueJs 2",
+      "ES6"
+    ],
+    "links": [
+      {
+      "url": "https://www.kuflink.com",
+      "description": "Kuflink brochure site",
+      },
+      {
+        "url": "https://invest.kuflink.com",
+        "description": "Investment platform",
+      },
+      {
+        "url": "https://www.commercialreporter.co.uk/commercial-news/kuflink-introduces-new-p2p-appropriateness-tes.html",
+        "description": "Kuflink introduces new appropriateness test",
+      }
+    ],
+    "imageName": "stint-ceb.png",
+    "featured": true,
+    "legacy" : false,
+  },
+  {
     "id": "9",
     "client": "Capita Employee Benefits",
     "clientLogo": "capita.svg",
@@ -10,6 +49,7 @@ export default [
         "Collaboration and development of internal UI platform library in VueJS and AngularJS"
     ],
     "startDate": "2017-09-01T00:00:00.000Z",
+    "endDate": "2019-06-12T00:00:00.000Z",
     "tags": [
       "Leadership",
       "Motivating",

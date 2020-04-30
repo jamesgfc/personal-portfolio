@@ -1,5 +1,33 @@
 export default [
   {
+    "name": "Vue.js (v2)",
+    "identifier": "vue-dot-js",
+    "description" : "Experience since early 2018 using vanilla VueJS2 with Vuex and vue-router, and also the Nuxt framework for Vue.js",
+    "featured": true,
+    "category": "technical"
+  },
+  {
+    "name": "Angular 2+ and AngularJS",
+    "identifier": "angular",
+    "description" : "Experience since 2016 using angularJS (v1) and Angular 2+ (from 2019) and associating tooling including Typescript, protractor and routing",
+    "featured": true,
+    "category": "technical"
+  },
+  {
+    "name": "React",
+    "identifier": "react",
+    "description" : "Basic working knowledge of React, hooks, and Redux",
+    "featured": true,
+    "category": "technical"
+  },
+  {
+    "name": "ES2015+ and babel",
+    "identifier": "javascript",
+    "description" : "Writing future ES6+ javascript with tooling including babel for transpiling",
+    "featured": true,
+    "category": "technical"
+  },
+  {
     "name": "HTML5",
     "identifier": "html5",
     "description" : "Expert at writing semantic, valid well structured and accessible HTML5 markup",
@@ -9,7 +37,7 @@ export default [
   {
     "name": "CSS3",
     "identifier": "css3",
-    "description" : "Advanced knowledge of CSS3 including new features like custom properties, flexbox and CSS grid and methodologies including ITCSS and BEM.  Preference for performant hand coded CSS but also experienced in frameworks including bulma and boostrap.",
+    "description" : "Advanced knowledge of CSS3 including new features like custom properties, flexbox and CSS grid and methodologies including ITCSS and BEM.  Preference for performant hand coded CSS but also experienced in frameworks including material UI, tailwind and bootstrap.",
     "featured": true,
     "category": "technical"
   },
@@ -21,30 +49,9 @@ export default [
     "category": "technical"
   },
   {
-    "name": "ES2015+ with babel",
-    "identifier": "javascript",
-    "description" : "Writing future ES6+ javascript with tooling including babel for transpiling",
-    "featured": true,
-    "category": "technical"
-  },
-  {
-    "name": "Vue.js",
-    "identifier": "vue-dot-js",
-    "description" : "Experience since early 2018 using vanilla VueJS with Vuex and Vue-Router, and also the Nuxt framework for Vue.js",
-    "featured": true,
-    "category": "technical"
-  },
-  {
-    "name": "AngularJS",
-    "identifier": "angular",
-    "description" : "Experience since 2016 using angularJS (v1) and associating tooling including protractor and routing",
-    "featured": true,
-    "category": "technical"
-  },
-  {
     "name": "Build tools",
     "identifier": "webpack",
-    "description" : "Experience with build automations tools including webpac, npm scripts, grunt and gulp",
+    "description" : "Experience with build automations tools including webpack, npm scripts, grunt and gulp",
     "featured": true,
     "category": "technical"
   },
@@ -57,7 +64,7 @@ export default [
   {
     "name": "VCS",
     "identifier": "github",
-    "description" : "Git, version control and CICD experience",
+    "description" : "Git version control, github actions and CICD tools",
     "featured": false,
     "category": "technical"
   },
@@ -69,7 +76,7 @@ export default [
   },
   {
     "name": "Test driven development",
-    "description" : "Test driven driven with tools such as jasmine, karma and sinon",
+    "description" : "Test driven driven with tools such as mocha, sinon, jasmine and sinon",
     "featured": false,
     "category": "professional"
   },
