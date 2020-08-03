@@ -15,6 +15,7 @@ export default [
         "Zero investor losses to date (at the time of writing)"
     ],
     "startDate": "2019-06-17T00:00:00.000Z",
+    "endDate": "2020-07-17T00:00:00.000Z",
     "tags": [
       "Angular 2+",
       "VueJs 2",
