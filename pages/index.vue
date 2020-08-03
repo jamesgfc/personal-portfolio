@@ -5,10 +5,7 @@
     </page-intro>
     <div class="c-site-content">
       <div class="c-page">
-        <section class="c-page__notification">
-          <p>Currently available to consider new permanent and contract opportunities.</p> 
-          <Btn @on-button-clicked="navigateToContact" label="Contact me today" />
-        </section>
+        
         <div class="c-page__inner">
           <client-matrix title="Featured clients and employers" :partners="featuredPartners"></client-matrix>
           <h1 class="c-title c-title--is-xl">Featured technical skills</h1>
